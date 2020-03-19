@@ -1,0 +1,19 @@
+.covid19-App {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.covid19-App__header {
+  width: 100%;
+  margin: 1em 0;
+}
+.covid19-App__updated {
+  font-size: .8em;
+  color: #8E8E8E;
+  float: right;
+  text-align: right;
+}

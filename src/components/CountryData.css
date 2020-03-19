@@ -1,0 +1,40 @@
+.covid19-countryData {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.covid19-countryData__infoblock {
+  /* flex-basis: 300px; */
+  max-width: 280px;
+  font-size: 1.4em;
+  line-height: 1;
+  margin: 1em 0;
+}
+.covid19-countryData__infoblock h3 {
+  margin: 0;
+  font-size: 2.4em;
+}
+.covid19-countryData__infoblock h3 + span {
+  font-size: .8em;
+}
+.covid19-countryData__infoblock_dynamic {
+  font-size: .5em;
+  vertical-align: middle;
+  top: -.25em;
+  position: relative;
+  font-weight: normal;
+}
+/* colors */
+.covid19-countryData__active {
+  color: #E36E79;
+}
+.covid19-countryData__deaths {
+  color: #383838;
+}
+.covid19-countryData__recovered {
+  color: #4DCD85;
+}
