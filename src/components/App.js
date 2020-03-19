@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react'
 import Service from '../lib/service'
 import { formatUpdateDate, findCountry } from '../lib'
 import CountrySelect from './CountrySelect'
 import CountryData from './CountryData'
 import WorldData from './WorldData'
 
-import './App.css';
+import './App.css'
 
 function App() {
   const [data, setData] = useState({})
@@ -33,7 +33,7 @@ function App() {
           value={ country }
           countries={ data.countries }
           onChange={ onCountryChange }
-          />
+        />
 
         { data.updated ? (<span class="covid19-App__updated">Данные обновлены: { formatUpdateDate(data.updated) }</span>) : '' }
       </div>
@@ -45,7 +45,7 @@ function App() {
 
       { data.data ? <WorldData data={ data.data } /> : '' }
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
