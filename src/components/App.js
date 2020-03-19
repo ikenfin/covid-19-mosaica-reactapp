@@ -28,7 +28,7 @@ function App() {
 
   return (
     <React.Fragment>
-      { data ? (
+      { data && data.countries.length > 0 ? (
       <div className="covid19-App">
         <div className="covid19-App__header">
           <CountrySelect
