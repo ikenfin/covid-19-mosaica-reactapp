@@ -38,7 +38,7 @@ function App() {
           />
 
           { data.updated
-            ? (<span class="covid19-App__updated">Данные обновлены: { formatUpdateDate(data.updated) }</span>)
+            ? (<span className="covid19-App__updated">Данные обновлены: { formatUpdateDate(data.updated) }</span>)
             : ''
           }
         </div>
