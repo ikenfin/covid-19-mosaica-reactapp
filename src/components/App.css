@@ -23,7 +23,7 @@
   width: 100%;
   display: block;
   text-align: center;
-  margin: .5em auto;
+  margin: 1em auto;
 }
 @media screen and (min-width: 767px) {
   .covid19-App__updated,
@@ -31,6 +31,6 @@
     width: auto;
   }
   .covid19-App__updated {
-    margin: 1em 0;
+    margin: .5em 0;
   }
 }
