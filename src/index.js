@@ -7,7 +7,10 @@ import { init } from '@sentry/browser'
 
 init({
   dsn: 'https://c431b955883d4fd682879e859a7146da@sentry.io/5130961',
-  environment: 'frontend'
+  environment: 'frontend',
+  whitelistUrls: [
+    'mosaica.ru'
+  ]
 })
 
 ReactDOM.render(<App />, document.getElementById('covid19-mosaica'))
