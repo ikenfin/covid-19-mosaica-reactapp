@@ -19,7 +19,7 @@ export function zfill (num) {
 */
 export function formatUpdateDate (timestamp) {
   const date = new Date(timestamp)
-  return `${zfill(date.getDate())}.${zfill(date.getMonth())}.${zfill(date.getFullYear())}, ${zfill(date.getHours())}:${zfill(date.getMinutes())}:${zfill(date.getSeconds())}`
+  return `${zfill(date.getDate())}.${zfill(date.getMonth() + 1)}.${zfill(date.getFullYear())}, ${zfill(date.getHours())}:${zfill(date.getMinutes())}:${zfill(date.getSeconds())}`
 }
 
 /*
