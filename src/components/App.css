@@ -12,9 +12,22 @@
   width: 100%;
   margin: 1em 0;
 }
+.covid19-App__header > select {
+  width: 100%;
+}
 .covid19-App__updated {
   font-size: .8em;
   color: #8E8E8E;
   float: right;
   text-align: right;
+  width: 100%;
+  display: block;
+  text-align: center;
+  margin: 1em auto;
+}
+@media screen and (min-width: 767px) {
+  .covid19-App__updated,
+  .covid19-App__header > select {
+    width: auto;
+  }
 }
