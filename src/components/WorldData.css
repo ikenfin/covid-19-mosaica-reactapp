@@ -1,6 +1,11 @@
 .covid19-WorldData {
   width: 100%;
 }
+.covid19-WorldData__title {
+  text-align: center;
+  font-size: 1.4em;
+  font-weight: normal;
+}
 .covid19-WorldData__row {
   display: flex;
   flex-wrap: wrap;

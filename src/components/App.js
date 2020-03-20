@@ -3,6 +3,7 @@ import Service from '../lib/service'
 import { formatUpdateDate, findCountry } from '../lib'
 import CountrySelect from './CountrySelect'
 import CountryData from './CountryData'
+import CountryTotal from './CountryTotal'
 import WorldData from './WorldData'
 
 import './App.css'
@@ -43,7 +44,13 @@ function App() {
           }
         </div>
 
-        { countryObj ? (<CountryData data={ countryObj } />) : '' }
+        { countryObj ? (
+          <>
+            <CountryTotal country={ countryObj } />
+            <CountryData data={ countryObj } />
+          </>
+        ) : '' }
+
         { data.data ? <WorldData data={ data.data } /> : '' }
       </div>
     ) : '' }

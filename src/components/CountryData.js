@@ -10,7 +10,7 @@ export default function CountryData ({ data }) {
       <div className="covid19-countryData__infoblock_content">
         <div>
           <h3>{ data.activeCases } <span className="covid19-countryData__infoblock_dynamic">{ data.casesNew > 0 ? `(+${ data.casesNew })` : '' }</span></h3>
-          <span>Заражений</span>
+          <span>Болеют</span>
         </div>
       </div>
     </div>

@@ -7,7 +7,7 @@ import './WorldData.css'
 export default function WorldData ({ data }) {
   return <React.Fragment>
     { (data.active && data.closed) ? (<div className="covid19-WorldData">
-      <h3>COVID-19 в мире</h3>
+      <h3 className="covid19-WorldData__title">COVID-19 в мире</h3>
       <div className="covid19-WorldData__row">
         <div className="covid19-WorldData__col">
           <h3>Зарегистрировано: { data.active.cases }</h3>
