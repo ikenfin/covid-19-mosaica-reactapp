@@ -6,10 +6,15 @@ class Covid19Service {
     this.api = 'https://covid19.codeville.ru/api/v1'
   }
   async fetchData () {
-    const response = await fetch(`${this.api}/last/full`)
-    const json = await response.json()
+    try {
+      const response = await fetch(`${this.api}/last/full`)
+      const json = await response.json()
 
-    return json
+      return [null, json]
+    }
+    catch (e) {
+      return [e, null]
+    }
   }
 }
 

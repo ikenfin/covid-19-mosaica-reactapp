@@ -20,9 +20,14 @@ function App() {
 
   useEffect(() => {
     async function fetchData () {
-      const data = await Service.fetchData()
-      setData(data)
-      setCountryObj(findCountry(data.countries, country))
+      const [err, data] = await Service.fetchData()
+      if (!err) {
+        setData(data)
+        setCountryObj(findCountry(data.countries, country))
+      }
+      else {
+        setData(null)
+      }
     }
     fetchData()
   }, [])
