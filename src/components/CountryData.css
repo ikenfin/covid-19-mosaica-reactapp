@@ -8,19 +8,57 @@
   justify-content: space-between;
 }
 .covid19-countryData__infoblock {
+  position: relative;
   /* flex-basis: 300px; */
-  max-width: 280px;
-  font-size: 1.4em;
+  max-width: 160px;
+  width: 30%;
+  font-size: 1.6em;
   line-height: 1;
   margin: 1em 0;
+  border: 4px solid;
+  border-radius: 100%;
+}
+.covid19-countryData__infoblock:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+.covid19-countryData__infoblock_content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.covid19-countryData__infoblock_content > div {
+  display: block;
+  text-align: center;
 }
 .covid19-countryData__infoblock h3 {
   margin: 0;
-  font-size: 2.4em;
+  font-size: 1.2em;
 }
 .covid19-countryData__infoblock h3 + span {
-  font-size: .8em;
+  font-size: .6em;
 }
+
+@media screen and (min-width: 767px) {
+  .covid19-countryData__infoblock {
+    max-width: 200px;
+    font-size: 1.6em;
+  }
+  .covid19-countryData__infoblock h3 {
+    font-size: 1.8em;
+  }
+  .covid19-countryData__infoblock h3 + span {
+    font-size: .8em;
+  }
+}
+
 .covid19-countryData__infoblock_dynamic {
   font-size: .5em;
   vertical-align: middle;
